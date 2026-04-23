@@ -19,6 +19,11 @@
 ## Table of Contents
 
 - [Overview](#overview)
+- [Motivation](#motivation)
+  - [Why Another Benchmark?](#why-another-benchmark)
+  - [Landscape of Existing Benchmarks](#landscape-of-existing-benchmarks)
+  - [Systematic Gaps in the Field](#systematic-gaps-in-the-field)
+  - [What DexBench Contributes](#what-dexbench-contributes)
 - [Task Suite](#task-suite)
   - [Tier 1 — Foundation Tasks](#tier-1--foundation-tasks-tactile-optional)
   - [Tier 2 — Contact-Sensitive Tasks](#tier-2--contact-sensitive-tasks-tactile-recommended)
@@ -53,9 +58,10 @@
 DexBench is built to complement physical dexterous hand hardware. The simulation stack is designed for sim-to-real transfer, with calibration tools for joint-level dynamics gap correction.
 
 ---
-# Motivation
 
-## Why Another Benchmark?
+## Motivation
+
+### Why Another Benchmark?
 
 Dexterous hand manipulation is one of the hardest open problems in robotics. Unlike parallel-jaw grippers, multi-finger hands must coordinate dozens of degrees of freedom, manage complex contact dynamics, and often operate in conditions where vision alone is insufficient. Despite rapid progress in robot learning, **no existing benchmark systematically evaluates dexterous hand policies across the dimensions that matter most in practice**.
 
@@ -63,9 +69,9 @@ DexBench was created to fill this gap.
 
 ---
 
-## Landscape of Existing Benchmarks
+### Landscape of Existing Benchmarks
 
-### Benchmarks Focused on Dexterous Hands
+#### Benchmarks Focused on Dexterous Hands
 
 **DexGraspNet / DexGraspNet 2.0**
 Provides 427M annotated grasp poses across 1,319 objects — the largest grasp dataset to date. However, it evaluates grasp *pose quality* only, with no dynamic execution, no tactile sensing, and no in-hand manipulation.
@@ -79,7 +85,7 @@ Demonstrates 94.6% real-world success on 500+ unseen objects and dynamic scene r
 **UniDex** *(CVPR 2026)*
 A large-scale dataset spanning 8 hand morphologies with 9M paired frames. UniDex is a *dataset*, not a benchmark — it defines no standardized evaluation protocol, provides no method baseline, and does not include tactile sensing.
 
-### Broader Manipulation Benchmarks (Partial Dexterous Hand Coverage)
+#### Broader Manipulation Benchmarks (Partial Dexterous Hand Coverage)
 
 **RoboCasa / RoboCasa365** *(ICLR 2026)*
 365 household tasks with support for humanoid platforms. Dexterous hand support is an add-on, not a core design goal. The primary end-effector throughout is a parallel-jaw gripper.
@@ -95,7 +101,7 @@ The dominant evaluation platforms for VLA methods. All use parallel-jaw grippers
 
 ---
 
-## Systematic Gaps in the Field
+### Systematic Gaps in the Field
 
 Mapping existing benchmarks across the dimensions that matter for real-world dexterous manipulation reveals consistent blind spots:
 
@@ -113,7 +119,7 @@ The field has converged on a narrow evaluation regime: single-hand grasping, par
 
 ---
 
-## What DexBench Contributes
+### What DexBench Contributes
 
 DexBench addresses these gaps through three concrete design decisions.
 
@@ -128,7 +134,7 @@ DexBench provides reference implementations for 17 methods spanning reinforcemen
 
 ---
 
-## The Core Argument
+### The Core Argument
 
 > The existing benchmark ecosystem for dexterous manipulation is built around what is easy to measure — grasp pose quality, single-task success rate, vision-only sensing — rather than what determines real-world capability. DexBench is designed around the latter.
 
@@ -274,7 +280,7 @@ Beyond success rate, DexBench mandates reporting the following per task:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-org/dexbench.git
+git clone https://github.com/Barristen/Dexrobot.git
 cd dexbench
 
 # Create conda environment
@@ -363,7 +369,7 @@ If you use DexBench in your research, please cite:
   title   = {DexBench: A Simulation Benchmark for Dexterous Hand Manipulation},
   author  = {Your Name and Collaborators},
   year    = {2025},
-  url     = {https://github.com/your-org/dexbench}
+  url     = {https://github.com/Barristen/Dexrobot}
 }
 ```
 
