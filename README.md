@@ -181,7 +181,7 @@ Tasks are organized into four difficulty tiers based on contact sensitivity and 
 
 ## Method Library
 
-DexBench provides reference implementations for 17 methods across three paradigms. All methods share a unified observation/action interface.
+DexBench provides reference implementations for 19 methods across three paradigms. All methods share a unified observation/action interface.
 
 ### Reinforcement Learning
 
@@ -214,6 +214,8 @@ DexBench provides reference implementations for 17 methods across three paradigm
 | [VLA-03](methods/vla/VLA-03.md) | VLA + ForceVLA-MoE | Insert force/tactile MoE routing module before VLA action decoding head | ✓ | T04, T05, T07 |
 | [VLA-04](methods/vla/VLA-04.md) | VLA-Touch (Non-invasive) | Tactile-language model generates semantic tactile descriptions → VLM planner; diffusion controller applies online corrections without retraining base VLA | ✓ | T04, T07 |
 | [VLA-05](methods/vla/VLA-05.md) | Hierarchical VLA | VLM handles semantic decomposition and mid-task instruction correction; low-level policy executes; inspired by Hi Robot / π0.5 | ✗ | T10, T11 |
+| [VLA-06](methods/vla/VLA-06.md) | π0 | PaliGemma + flow matching action expert; large-scale cross-morphology pre-training with task-specific fine-tuning | ✗ | T01, T10, T11 |
+| [VLA-07](methods/vla/VLA-07.md) | π0.5 | Open-world generalization extension of π0; zero- or few-shot instruction following without per-task fine-tuning | ✗ | T10, T11 |
 
 ---
 
@@ -238,6 +240,8 @@ DexBench provides reference implementations for 17 methods across three paradigm
 | VLA-03 | | | | ✓ | ✓ | | ✓ | | | | |
 | VLA-04 | | | | ✓ | | | ✓ | | | | |
 | VLA-05 | | | | | | | | | | ✓ | ✓ |
+| VLA-06 | ✓ | | | | | | | | | ✓ | ✓ |
+| VLA-07 | | | | | | | | | | ✓ | ✓ |
 
 ---
 
