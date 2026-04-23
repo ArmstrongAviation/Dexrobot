@@ -4,6 +4,12 @@
 
 ---
 
+## 架构图
+
+![FVLMoE architecture](VLA-03-fvlmoe-architecture.png)
+
+---
+
 ## 原始工作
 
 - ForceVLA 原始论文：*TODO — 补充论文链接*

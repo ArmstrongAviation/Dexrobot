@@ -4,6 +4,18 @@
 
 ---
 
+## 架构图
+
+**OpenVLA 基础架构**
+
+![OpenVLA base architecture](VLA-01-openvla-base.png)
+
+**OpenVLA-OFT+ 微调架构**（并行解码 + 动作分块 + FLM 调制）
+
+![OpenVLA-OFT+ architecture](VLA-01-openvla-oft.png)
+
+---
+
 ## 原始工作
 
 - OpenVLA 论文：[OpenVLA: An Open-Source Vision-Language-Action Model](https://arxiv.org/abs/2406.09246)（Kim et al., 2024）

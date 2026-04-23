@@ -4,6 +4,12 @@
 
 ---
 
+## 架构图
+
+![VLM Planner + Diffusion Policy overview](VLA-02-vlm-diffusion-overview.png)
+
+---
+
 ## 原始工作
 
 - Qwen2-VL 论文：[Qwen2-VL: Enhancing Vision-Language Model's Perception of the World at Any Resolution](https://arxiv.org/abs/2409.12191)（Wang et al., 2024）
