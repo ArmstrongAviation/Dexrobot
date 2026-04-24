@@ -1,6 +1,6 @@
 <div align="center">
 
-#  DexBench
+#  DexRobot
 
 **A Simulation Benchmark for Dexterous Hand Manipulation**  
 *Covering RL, Imitation Learning, and VLA Methods with Tactile Sensing as a First-Class Dimension*
