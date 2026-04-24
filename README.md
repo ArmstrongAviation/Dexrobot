@@ -161,6 +161,7 @@ Tasks are organized into four difficulty tiers based on contact sensitivity and 
 | T04 | Precision Insertion | Insert connectors (USB-A/B, cylindrical pins, square pegs) into sockets with 0.5–2 mm clearance | **High** |
 | T05 | Screw and Cap Tightening | Tighten bottle caps and nuts; requires sensing when target torque is reached | **High** |
 | T06 | Deformable Object Handling | Fold cloth, bend soft tubing; requires force upper-bound control | **High** |
+| T12 | Tool Use | Use a tool (screwdriver, hammer, spatula, etc.) to accomplish a target task; requires functional grasp reasoning and indirect force sensing through the tool | **High** |
 
 ### Tier 3 — Tactile-Critical (Tactile Required)
 
@@ -221,27 +222,27 @@ DexBench provides reference implementations for **17 independent methods** acros
 
 ## Method × Task Coverage
 
-|  | T01 | T02 | T03 | T04 | T05 | T06 | T07 | T08 | T09 | T10 | T11 |
-|--|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| RL-01 | ✓ | ✓ | ✓ | | | | | | | | |
-| RL-02 | ✓ | | | | | | | | ✓ | | |
-| RL-03 | | ✓ | | | | | | | ✓ | | |
-| RL-04 | | | | ✓ | ✓ | | ✓ | | | | |
-| RL-05 | | ✓ | | ✓ | | | | | | | ✓ |
-| RL-06 | | | | | | | | | ✓ | | |
-| IL-01 | ✓ | ✓ | ✓ | | | | | | | | |
-| IL-02 | | | | ✓ | ✓ | | ✓ | | | | |
-| IL-03 | | | | ✓ | | | | | | | ✓ |
-| IL-04 | ✓ | | | | | | | | ✓ | | |
-| IL-05 | ✓ | | ✓ | | | | | | | | ✓ |
-| IL-06 | | | | ✓ | | | | ✓ | | | |
-| VLA-01 | ✓ | | | | | | | | | ✓ | |
-| VLA-02 | ✓ | | | | | | | | | ✓ | ✓ |
-| VLA-03 | | | | ✓ | ✓ | | ✓ | | | | |
-| VLA-04 | | | | ✓ | | | ✓ | | | | |
-| VLA-05 | | | | | | | | | | ✓ | ✓ |
-| VLA-06 | ✓ | | | | | | | | | ✓ | ✓ |
-| VLA-07 | | | | | | | | | | ✓ | ✓ |
+|  | T01 | T02 | T03 | T04 | T05 | T06 | T07 | T08 | T09 | T10 | T11 | T12 |
+|--|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| RL-01 | ✓ | ✓ | ✓ | | | | | | | | | |
+| RL-02 | ✓ | | | | | | | | ✓ | | | |
+| RL-03 | | ✓ | | | | | | | ✓ | | | |
+| RL-04 | | | | ✓ | ✓ | | ✓ | | | | | ✓ |
+| RL-05 | | ✓ | | ✓ | | | | | | | ✓ | ✓ |
+| RL-06 | | | | | | | | | ✓ | | | |
+| IL-01 | ✓ | ✓ | ✓ | | | | | | | | | ✓ |
+| IL-02 | | | | ✓ | ✓ | | ✓ | | | | | ✓ |
+| IL-03 | | | | ✓ | | | | | | | ✓ | ✓ |
+| IL-04 | ✓ | | | | | | | | ✓ | | | |
+| IL-05 | ✓ | | ✓ | | | | | | | | ✓ | |
+| IL-06 | | | | ✓ | | | | ✓ | | | | ✓ |
+| VLA-01 | ✓ | | | | | | | | | ✓ | | ✓ |
+| VLA-02 | ✓ | | | | | | | | | ✓ | ✓ | ✓ |
+| VLA-03 | | | | ✓ | ✓ | | ✓ | | | | | |
+| VLA-04 | | | | ✓ | | | ✓ | | | | | |
+| VLA-05 | | | | | | | | | | ✓ | ✓ | |
+| VLA-06 | ✓ | | | | | | | | | ✓ | ✓ | ✓ |
+| VLA-07 | | | | | | | | | | ✓ | ✓ | |
 
 ---
 
