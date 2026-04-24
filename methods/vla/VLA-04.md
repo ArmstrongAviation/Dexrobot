@@ -8,7 +8,7 @@
 
 左：无力感知输入的 VLA（失败）；右：加入力感知模态的 ForceVLA（成功）
 
-![ForceVLA vs VLA without force input](VLA-04-forcevla-comparison.png)
+![VLA-Touch](VLA-04.png)
 
 ---
 
